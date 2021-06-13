@@ -3,14 +3,14 @@
 ============Quantumultx===============
 [task_local]
 #店铺签到
-0 0 * * * https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_shop_sign.js, tag=店铺签到, enabled=true
+0 0,23 * * * https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_shop_sign.js, tag=店铺签到, enabled=true
 ===========Loon============
 [Script]
-cron "0 0 * * *" script-path=https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_shop_sign.js,tag=店铺签到
+cron "0 0,23 * * *" script-path=https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_shop_sign.js,tag=店铺签到
 ============Surge=============
-店铺签到 = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_shop_sign.js
+店铺签到 = type=cron,cronexp="0 0,23 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_shop_sign.js
 ===========小火箭========
-店铺签到 = type=cron,script-path=https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_shop_sign.jss, cronexpr="0 0 * * *", timeout=3600, enable=true
+店铺签到 = type=cron,script-path=https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_shop_sign.jss, cronexpr="0 0,23 * * *", timeout=3600, enable=true
 */
 
 const $ = new Env('店铺签到');
@@ -36,13 +36,12 @@ const token = [
   '1F0E6B28C6835DC39D9501249FBFF41C', //连签3天5豆，连签5天10豆，5.24-6.20
   '104529FC5096DA3651590EF2627AB49E', //连签5天2豆，6.1-6.15
   '97A5B24DCB778C69AE8A0D47678C5E61', //每日10豆，连签7天100豆，6.8-6.14
-  '8762463F3B9F7A9C6C676B5BFBADB0BB', //每日2豆，连签7天100豆，6.5-6.20
   '2B412163ACA95F019E27546235EB6A03', //连签8天50豆，6.4-6.18
   'F0DD7795C6E05560427588F188AE8982', //每日1豆，连签3天15豆、7天40豆、15天100豆，6.4-7.3
   'AFC0280EF82CE679E5AB3D86C0C97466', //每日5豆，连签1天2豆、3天5豆、7天10豆，6.9-6.30
-  '9E7C267E1A9338D3D0EAB6743C5A02FF', //每日3豆，连签3天3元红包，6.9-6.15
   'AD5E0F480FEBBB37E1E98AFF22D01E92', //每日2豆，连签7天5豆，6.9-6.30
   'B1B920D93722AB35B5F62FEC98A8C4A0', //每日1豆，连签7天100豆，6.9-6.30
+  'C58C2289A5A91ADBAD9396F8758A8907', //每日2豆，连签7天10豆，5.25-6.23
 ]
 
 if ($.isNode()) {
