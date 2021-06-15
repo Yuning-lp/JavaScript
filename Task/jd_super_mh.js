@@ -5,17 +5,17 @@
 ==============Quantumult X==============
 [task_local]
 #超级直播间盲盒抽京豆
-1-3 18,19 * * * https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_super_mh.js, tag=超级直播间盲盒抽京豆, enabled=true
+1-3 18-20 * * * https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_super_mh.js, tag=超级直播间盲盒抽京豆, enabled=true
 
 ==============Loon==============
 [Script]
-cron "1-3 18,19 * * *" script-path=https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_super_mh.js,tag=超级直播间盲盒抽京豆
+cron "1-3 18-20 * * *" script-path=https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_super_mh.js,tag=超级直播间盲盒抽京豆
 
 ================Surge===============
-超级直播间盲盒抽京豆 = type=cron,cronexp="1-3 18,19 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_super_mh.js
+超级直播间盲盒抽京豆 = type=cron,cronexp="1-3 18-20 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_super_mh.js
 
 ===============小火箭==========
-超级直播间盲盒抽京豆 = type=cron,script-path=https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_super_mh.js, cronexpr="1-3 18,19 * * *", timeout=3600, enable=true
+超级直播间盲盒抽京豆 = type=cron,script-path=https://raw.githubusercontent.com/Aaron-lv/JavaScript/master/Task/jd_super_mh.js, cronexpr="1-3 18-20 * * *", timeout=3600, enable=true
 */
 
 const $ = new Env('超级直播间盲盒抽京豆');
